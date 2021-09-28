@@ -29,14 +29,22 @@ export default function Home() {
     }
     FirstInput.reset()
     SecondInput.reset()
+    setTimeout(() => {
+      Setres(0)
+    },5000)
   }
   return (
     <>
 <nav className="navbar navbar-light p-3 shadow-lg bg-light">
-  <div className="container-fluid">
+        <div className="container-fluid">
+
           <span className="navbar-brand mb-0 h3">Laksh&apos;s Calculator</span>
   </div>
-</nav>
+      </nav>
+      {curresult === 'Sum failed!' && <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Sum failed. Enter Proper values
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>}
     <div className={styles.container}>
       <h1>Calculator: {mode}</h1>
       <input
