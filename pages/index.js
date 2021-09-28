@@ -41,9 +41,9 @@ export default function Home() {
           <span className="navbar-brand mb-0 h3">Laksh&apos;s Calculator</span>
   </div>
       </nav>
-      {curresult === 'Sum failed!' && <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      {curresult === 'Sum failed!' && <div className="alert alert-danger alert-dismissible fade show" role="alert">
         Sum failed. Enter Proper values
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>}
     <div className={styles.container}>
       <h1>Calculator: {mode}</h1>
