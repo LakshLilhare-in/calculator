@@ -24,6 +24,9 @@ export default function Home() {
     if (Math.sign(curresult) === -1 ) {
       Setres('Sum failed!')
     }
+    if (Number.isNaN(curresult) === false) {
+      Setres('Sum failed!')
+    }
     FirstInput.reset()
     SecondInput.reset()
   }
