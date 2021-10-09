@@ -21,10 +21,10 @@ export default function Home() {
     if (mode === "Divide") {
       Setres(parseInt(FirstInput.value) / parseInt(SecondInput.value))
     }
-    if (Math.sign(curresult) === -1 ) {
+    if (Math.sign(curresult) === -1) {
       Setres('Sum failed!')
     }
-    if (Number.isNaN(curresult) === false) {
+    if (Number.isNaN(curresult) === true) {
       Setres('Sum failed!')
     }
     FirstInput.reset()
